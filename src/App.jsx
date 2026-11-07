@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Clients from "./components/Clients";
 import Contact from "./components/Contact";
+import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -36,6 +37,7 @@ export default function App() {
         <Pricing onSelect={selectPlan} />
         <Partners />
         <Clients />
+        <Faq />
         <Contact planId={planId} onPlanChange={setPlanId} />
       </main>
       <Footer />

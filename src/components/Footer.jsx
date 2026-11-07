@@ -14,7 +14,11 @@ export default function Footer() {
             <Logo className="h-11 w-auto" />
           </div>
           <p className="mt-4 text-sm leading-relaxed text-white/75">
-            Publicidad EnRuta. Marcas que viajan lejos, en el respaldo de los buses de Cali y el Valle.
+            Publicidad EnRuta. Marcas que viajan lejos, en el respaldo de los buses de Cali y el Valle del
+            Cauca. Publicidad exterior con audiencia cautiva en rutas urbanas e intermunicipales.
+          </p>
+          <p className="mt-3 text-xs leading-relaxed text-white/55">
+            Cali, Valle del Cauca, Colombia · publicidadenruta.com
           </p>
           <SocialLinks
             className="mt-5 flex items-center gap-3"

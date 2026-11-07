@@ -75,15 +75,16 @@ export default function Hero() {
         <div className="lg:col-span-7">
           <p className="hero-enter inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-navy ring-1 ring-slate-200">
             <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden="true" />
-            Publicidad EnRuta
+            Publicidad en medios de transporte
           </p>
           <h1 className="hero-enter hero-enter-delay-1 mt-5 max-w-xl text-balance text-4xl font-extrabold leading-[1.08] tracking-tight text-navy sm:text-5xl lg:text-[3.35rem]">
-            Haz que tu marca viaje con miles de pasajeros cada día.
+            Publicidad en buses en Cali y el Valle: haz que tu marca viaje cada día.
           </h1>
           <p className="hero-enter hero-enter-delay-2 mt-5 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-            Publicidad en el respaldo de las sillas de buses intermunicipales e interurbanos. Tu aviso va
-            frente al pasajero durante todo el trayecto: entre 45 minutos y más de 3 horas, con la
-            repetición de quien vive, trabaja o estudia entre Cali y el Valle.
+            Publicidad EnRuta coloca anuncios en el respaldo de las sillas de buses urbanos e
+            intermunicipales. Tu aviso va frente al pasajero durante todo el trayecto: entre 45 minutos y
+            más de 3 horas, con la repetición de quien vive, trabaja o estudia entre Cali y el Valle del
+            Cauca.
           </p>
 
           <div className="hero-enter hero-enter-delay-3 mt-8 flex flex-col gap-3 sm:flex-row">

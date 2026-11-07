@@ -6,6 +6,11 @@ export const PHONES = [
 export const EMAIL = "contacto@publicidadenruta.com";
 export const EMAIL_ALT = "publicidad.enrutaco@gmail.com";
 export const WHATSAPP = "573192134129";
+export const SITE_URL = "https://publicidadenruta.com";
+export const SITE_NAME = "Publicidad EnRuta";
+export const SITE_TAGLINE = "Marcas que viajan lejos";
+export const SITE_DESCRIPTION =
+  "Publicidad en respaldos de sillas de buses intermunicipales e interurbanos en Cali y el Valle del Cauca. Audiencia cautiva de 45 minutos a más de 3 horas. Diseño, instalación y mantenimiento incluidos.";
 
 export const SOCIAL = [
   {
@@ -32,6 +37,7 @@ export const NAV = [
   { href: "#rutas", id: "rutas", label: "Rutas" },
   { href: "#tarifas", id: "tarifas", label: "Tarifas" },
   { href: "#casos", id: "casos", label: "Casos de éxito" },
+  { href: "#preguntas", id: "preguntas", label: "Preguntas" },
   { href: "#contacto", id: "contacto", label: "Contacto" },
 ];
 
@@ -215,3 +221,36 @@ export const gallery = [
 ];
 
 export const included = ["Diseño", "Instalación", "Mantenimiento", "Renovación mensual"];
+
+export const faqs = [
+  {
+    question: "¿Qué es Publicidad EnRuta?",
+    answer:
+      "Publicidad EnRuta es una empresa de publicidad exterior en Cali y el Valle del Cauca. Coloca anuncios en el respaldo de las sillas de buses urbanos e intermunicipales, frente al pasajero durante todo el trayecto.",
+  },
+  {
+    question: "¿Dónde circula la publicidad en buses de EnRuta?",
+    answer:
+      "La pauta circula en Cali (rutas urbanas con Recreativos y La Ermita) y en corredores intermunicipales hacia Palmira, Candelaria, Lago Calima, Dagua, Restrepo y Florida, con operadores como Coodetrans, Sultana del Valle, Transcalima y Transflorida.",
+  },
+  {
+    question: "¿Cuánto dura la exposición de cada anuncio?",
+    answer:
+      "Cada trayecto dura entre 45 minutos y más de 3 horas. El mismo bus opera aproximadamente de 5:30 a. m. a 9:00 p. m., así que la marca puede sumar entre 7 y 15 horas de exposición al día.",
+  },
+  {
+    question: "¿Cuánto cuesta pautar con Publicidad EnRuta?",
+    answer:
+      "Hay tres planes en pesos colombianos: espacio individual desde $150.000 COP al mes por bus (mínimo 5 buses), pauta compartida por $800.000 COP en un paquete de 5 buses, y flota 100% por $1.500.000 COP al mes en 5 buses.",
+  },
+  {
+    question: "¿Qué incluye el plan de publicidad?",
+    answer:
+      "En los tres planes entran el diseño, la impresión, la instalación, el mantenimiento y la renovación mensual del material, sin cobros aparte por poner la pieza a circular.",
+  },
+  {
+    question: "¿Cómo cotizo una campaña con EnRuta?",
+    answer:
+      "Puedes escribir a Fanery Ospina por WhatsApp al +57 319 213 4129, llamar al +57 317 237 6562 o enviar un correo a contacto@publicidadenruta.com. Indica la marca, la ruta de interés y el plan que te interesa.",
+  },
+];
