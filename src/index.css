@@ -37,9 +37,12 @@
   }
 
   .reveal,
-  .hero-enter {
+  .hero-enter,
+  .wa-float,
+  .wa-pulse {
     opacity: 1 !important;
     translate: none !important;
+    transform: none !important;
     transition: none !important;
     animation: none !important;
   }
@@ -111,4 +114,42 @@
 
 .hero-enter-delay-5 {
   animation-delay: 0.58s;
+}
+
+@keyframes wa-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -8px;
+  }
+}
+
+@keyframes wa-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+.wa-float {
+  animation: wa-float 2.6s ease-in-out infinite;
+}
+
+.wa-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #25d366;
+  animation: wa-pulse 2.4s ease-out infinite;
+  pointer-events: none;
 }

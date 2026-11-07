@@ -11,13 +11,13 @@ export default function Opportunity() {
           <SectionHeading
             light
             eyebrow="Cómo funciona"
-            title="Una audiencia que no cambia de pantalla."
-            text="En el bus el aviso no compite con el scroll. Está en el respaldo de adelante, a la altura de los ojos, durante todo el viaje."
+            title="Una audiencia cautiva, sin cambiar de pantalla."
+            text="En publicidad en buses, el anuncio no compite con el scroll. Está en el respaldo de adelante, a la altura de los ojos, durante todo el viaje."
           />
           <p className="text-base leading-relaxed text-white/75 lg:pb-1">
             Trabajadores, estudiantes y familias de Cali y los municipios vecinos lo ven de ida y de
-            regreso. La atención va de 45 minutos a más de 3 horas, en un asiento del que no se bajan
-            para saltar al siguiente anuncio.
+            regreso. Es un medio con tiempo de atención real: de 45 minutos a más de 3 horas, en un
+            asiento donde la marca no se puede saltar con un clic.
           </p>
         </Reveal>
 

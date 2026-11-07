@@ -10,7 +10,7 @@ export const SITE_URL = "https://publicidadenruta.com";
 export const SITE_NAME = "Publicidad EnRuta";
 export const SITE_TAGLINE = "Marcas que viajan lejos";
 export const SITE_DESCRIPTION =
-  "Publicidad en respaldos de sillas de buses intermunicipales e interurbanos en Cali y el Valle del Cauca. Audiencia cautiva de 45 minutos a más de 3 horas. Diseño, instalación y mantenimiento incluidos.";
+  "Publicidad en medios de transporte en Cali y el Valle del Cauca. Anuncios en el respaldo de sillas de buses urbanos e intermunicipales, con audiencia cautiva de 45 minutos a más de 3 horas. Diseño, instalación y mantenimiento incluidos.";
 
 export const SOCIAL = [
   {
@@ -28,7 +28,7 @@ export const SOCIAL = [
 export function whatsappUrl(text) {
   const message =
     text ||
-    "Hola Fanery, quiero cotizar una campaña de publicidad en buses con EnRuta.";
+    "Hola Fanery, soy de una empresa y quiero cotizar una campaña de publicidad en buses con EnRuta.";
   return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`;
 }
 
@@ -47,37 +47,37 @@ export const metrics = [
   {
     value: "10",
     label: "Espacios por bus",
-    detail: "Uno por cada pareja de sillas. El aviso queda a la altura de los ojos.",
+    detail: "Uno por cada pareja de sillas. El anuncio queda a la altura de los ojos del pasajero.",
   },
   {
     value: "5:30–21:00",
     label: "Operación del día",
-    detail: "La pieza viaja desde la primera salida hasta el último turno.",
+    detail: "La pieza circula desde la primera salida hasta el último turno del servicio.",
   },
   {
     value: "1–3 h",
     label: "Por trayecto",
-    detail: "Tiempo real de lectura, de ida o de regreso, sin cambiar de pantalla.",
+    detail: "Tiempo efectivo de lectura, de ida o de regreso, sin competir con otra pantalla.",
   },
   {
     value: "7–15 h",
     label: "Exposición al día",
-    detail: "El mismo bus muestra la marca durante toda la jornada de servicio.",
+    detail: "El mismo bus mantiene visible la marca durante toda la jornada de operación.",
   },
 ];
 
 export const steps = [
   {
-    title: "Elige el corredor",
-    text: "Cali urbana, Palmira, Candelaria, Lago Calima o Florida. Armamos la presencia donde están tus clientes.",
+    title: "Elige la ruta",
+    text: "Cali urbana, Palmira, Candelaria, Lago Calima o Florida. Definimos la cobertura donde está tu público objetivo.",
   },
   {
     title: "Producimos e instalamos",
-    text: "Diseño, impresión, instalación y mantenimiento van en el plan. No hay un cobro aparte por poner la pieza a andar.",
+    text: "Diseño, impresión, instalación y mantenimiento van incluidos en el plan. Sin costos ocultos para poner la campaña en circulación.",
   },
   {
-    title: "La marca se queda en ruta",
-    text: "El material se renueva cada mes, sin costo adicional, mientras la campaña sigue en circulación.",
+    title: "La campaña se mantiene en ruta",
+    text: "El material se renueva cada mes, sin costo adicional, mientras la inversión sigue activa.",
   },
 ];
 
@@ -87,36 +87,36 @@ export const routes = [
     type: "Urbana",
     title: "Cali",
     operators: ["Recreativos", "La Ermita"],
-    summary: "Recorridos dentro de la ciudad, con pasajeros que repiten la ruta en la semana.",
+    summary: "Rutas urbanas con pasajeros recurrentes a lo largo de la semana.",
     detail:
-      "Trabajo, estudio y diligencias. El aviso se encuentra con la misma gente de ida y de regreso, a lo largo del día.",
+      "Ideal para marcas con audiencia en la ciudad. El anuncio se encuentra con el mismo público de ida y de regreso, durante toda la jornada.",
   },
   {
     code: "02",
     type: "Intermunicipal",
     title: "Palmira y Candelaria",
     operators: ["Coodetrans", "Sultana del Valle"],
-    summary: "Corredor entre Cali, Palmira y Candelaria.",
+    summary: "Ruta entre Cali, Palmira y Candelaria.",
     detail:
-      "Trayectos largos para leer una oferta completa. Viajan trabajadores, estudiantes y familias entre la ciudad y estos municipios.",
+      "Trayectos largos para comunicar una oferta completa. Alcanza trabajadores, estudiantes y familias que se desplazan entre la ciudad y estos municipios.",
   },
   {
     code: "03",
     type: "Intermunicipal",
     title: "Lago Calima, Dagua y Restrepo",
     operators: ["Transcalima"],
-    summary: "Vía de residentes y de turismo hacia el lago.",
+    summary: "Ruta de residentes y turismo hacia el lago.",
     detail:
-      "Recorridos de una a tres horas. La pieza permanece al frente en un viaje de paisaje, descanso y regreso a casa.",
+      "Recorridos de una a tres horas. La pieza permanece frente al pasajero en un trayecto de alto tiempo de exposición.",
   },
   {
     code: "04",
     type: "Intermunicipal",
     title: "Florida, Valle",
     operators: ["Transflorida"],
-    summary: "Conexión con Florida, al sur del Valle del Cauca.",
+    summary: "Ruta hacia Florida, al sur del Valle del Cauca.",
     detail:
-      "Viajeros recurrentes del corredor sur. Sirve a marcas que venden en esa zona y también en Cali.",
+      "Viajeros recurrentes de la ruta sur. Sirve a empresas con presencia comercial en esa zona y también en Cali.",
   },
 ];
 
@@ -136,7 +136,7 @@ export const plans = [
     name: "Espacio individual",
     price: "$150.000",
     period: "COP / mes por bus",
-    blurb: "Un respaldo completo en cinco buses de la ruta que elijas.",
+    blurb: "Un respaldo completo en cinco buses de la ruta que elija su empresa.",
     featured: false,
     specs: {
       investment: "$150.000 / mes por bus",
@@ -153,7 +153,7 @@ export const plans = [
     name: "Pauta compartida",
     price: "$800.000",
     period: "COP · paquete de 5 buses",
-    blurb: "Tu marca ocupa la mitad del espacio, en cinco buses al mismo tiempo.",
+    blurb: "Su marca ocupa la mitad del espacio, en cinco buses al mismo tiempo.",
     featured: false,
     specs: {
       investment: "$800.000 por el paquete",
@@ -186,10 +186,10 @@ export const plans = [
 ];
 
 export const partners = [
-  { name: "Coodetrans", corridor: "Palmira y Candelaria" },
-  { name: "Sultana del Valle", corridor: "Palmira y Candelaria" },
-  { name: "Transcalima", corridor: "Lago Calima, Dagua y Restrepo" },
-  { name: "Transflorida", corridor: "Florida, Valle" },
+  { name: "Coodetrans", route: "Palmira y Candelaria" },
+  { name: "Sultana del Valle", route: "Palmira y Candelaria" },
+  { name: "Transcalima", route: "Lago Calima, Dagua y Restrepo" },
+  { name: "Transflorida", route: "Florida, Valle" },
 ];
 
 export const clients = [
@@ -206,17 +206,17 @@ export const gallery = [
   {
     src: "/assets/bus-salon.jpg",
     alt: "Interior de un bus con publicidad de EnRuta en el respaldo de las sillas, visto hacia el frente del salón.",
-    caption: "El aviso viaja en el salón completo, de la primera fila a la última.",
+    caption: "El anuncio viaja en el salón completo, de la primera fila a la última.",
   },
   {
     src: "/assets/ad-formato.jpg",
     alt: "Funda de respaldo con un aviso de venta de apartamentos, formato usado por Publicidad EnRuta.",
-    caption: "Formato real: una funda impresa, fija en el respaldo, lista para leerse de cerca.",
+    caption: "Formato comercial: funda impresa, fija en el respaldo, con lectura cercana y prolongada.",
   },
   {
     src: "/assets/ad-calima.jpg",
     alt: "Aviso turístico de Lago Calima instalado en el respaldo de una silla de bus.",
-    caption: "La misma pieza sirve para una oferta local, un destino o una marca de consumo.",
+    caption: "El mismo formato sirve para lanzamientos, destinos, retail o servicios B2C.",
   },
 ];
 
@@ -226,12 +226,12 @@ export const faqs = [
   {
     question: "¿Qué es Publicidad EnRuta?",
     answer:
-      "Publicidad EnRuta es una empresa de publicidad exterior en Cali y el Valle del Cauca. Coloca anuncios en el respaldo de las sillas de buses urbanos e intermunicipales, frente al pasajero durante todo el trayecto.",
+      "Publicidad EnRuta es una empresa de publicidad en medios de transporte en Cali y el Valle del Cauca. Ofrece publicidad en buses mediante anuncios en el respaldo de las sillas, frente al pasajero durante todo el trayecto.",
   },
   {
     question: "¿Dónde circula la publicidad en buses de EnRuta?",
     answer:
-      "La pauta circula en Cali (rutas urbanas con Recreativos y La Ermita) y en corredores intermunicipales hacia Palmira, Candelaria, Lago Calima, Dagua, Restrepo y Florida, con operadores como Coodetrans, Sultana del Valle, Transcalima y Transflorida.",
+      "La pauta circula en Cali (rutas urbanas con Recreativos y La Ermita) y en rutas intermunicipales hacia Palmira, Candelaria, Lago Calima, Dagua, Restrepo y Florida, con operadores como Coodetrans, Sultana del Valle, Transcalima y Transflorida.",
   },
   {
     question: "¿Cuánto dura la exposición de cada anuncio?",
@@ -239,18 +239,18 @@ export const faqs = [
       "Cada trayecto dura entre 45 minutos y más de 3 horas. El mismo bus opera aproximadamente de 5:30 a. m. a 9:00 p. m., así que la marca puede sumar entre 7 y 15 horas de exposición al día.",
   },
   {
-    question: "¿Cuánto cuesta pautar con Publicidad EnRuta?",
+    question: "¿Cuánto cuesta una campaña de publicidad en buses con EnRuta?",
     answer:
       "Hay tres planes en pesos colombianos: espacio individual desde $150.000 COP al mes por bus (mínimo 5 buses), pauta compartida por $800.000 COP en un paquete de 5 buses, y flota 100% por $1.500.000 COP al mes en 5 buses.",
   },
   {
     question: "¿Qué incluye el plan de publicidad?",
     answer:
-      "En los tres planes entran el diseño, la impresión, la instalación, el mantenimiento y la renovación mensual del material, sin cobros aparte por poner la pieza a circular.",
+      "En los tres planes entran el diseño, la impresión, la instalación, el mantenimiento y la renovación mensual del material, sin cobros adicionales para poner la campaña en circulación.",
   },
   {
-    question: "¿Cómo cotizo una campaña con EnRuta?",
+    question: "¿Cómo solicita una empresa una cotización?",
     answer:
-      "Puedes escribir a Fanery Ospina por WhatsApp al +57 319 213 4129, llamar al +57 317 237 6562 o enviar un correo a contacto@publicidadenruta.com. Indica la marca, la ruta de interés y el plan que te interesa.",
+      "Puede escribir a Fanery Ospina por WhatsApp al +57 319 213 4129, llamar al +57 317 237 6562 o enviar un correo a contacto@publicidadenruta.com. Indique la empresa, la ruta de interés y el plan que desea evaluar.",
   },
 ];

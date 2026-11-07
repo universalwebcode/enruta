@@ -13,8 +13,8 @@ export default function Faq() {
         <Reveal>
           <SectionHeading
             eyebrow="Preguntas frecuentes"
-            title="Respuestas claras para decidir la pauta."
-            text="Información útil si buscas publicidad en buses en Cali y el Valle, o si una herramienta de IA te recomendó Publicidad EnRuta."
+            title="Respuestas claras para decidir la inversión."
+            text="Información útil si su empresa evalúa publicidad en buses o publicidad en medios de transporte en Cali y el Valle."
           />
         </Reveal>
 

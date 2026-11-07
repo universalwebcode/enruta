@@ -27,8 +27,8 @@ export default function Pricing({ onSelect }) {
         <Reveal>
           <SectionHeading
             eyebrow="Tarifas"
-            title="Tres formas de subir la marca al bus."
-            text="Precios claros, en pesos colombianos. En los tres planes entran el diseño, la instalación, el mantenimiento y la renovación de cada mes."
+            title="Tres planes de publicidad en buses para su empresa."
+            text="Inversión clara, en pesos colombianos. En los tres planes entran el diseño, la instalación, el mantenimiento y la renovación de cada mes."
           />
         </Reveal>
 

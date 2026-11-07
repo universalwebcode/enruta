@@ -7,10 +7,11 @@ export default function WhatsAppButton() {
       href={whatsappUrl()}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 right-5 z-40 hidden h-14 w-14 items-center justify-center rounded-full bg-[#128C7E] text-white shadow-lg hover:bg-[#0E6F63] md:inline-flex"
+      className="wa-float fixed bottom-24 right-5 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_10px_28px_rgba(37,211,102,0.45)] transition duration-300 hover:scale-105 hover:bg-[#1ebe57] md:bottom-5"
       aria-label="Hablar por WhatsApp con Fanery Ospina"
     >
-      <IconWhatsApp className="h-7 w-7" />
+      <span className="wa-pulse" aria-hidden="true" />
+      <IconWhatsApp className="relative z-10 h-8 w-8" />
     </a>
   );
 }
@@ -29,9 +30,9 @@ export function MobileBar() {
           href={whatsappUrl()}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-3 py-3 text-sm font-bold text-white"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-3 py-3 text-sm font-bold text-white"
         >
-          <IconWhatsApp className="h-4 w-4" />
+          <IconWhatsApp className="h-5 w-5" />
           WhatsApp
         </a>
       </div>

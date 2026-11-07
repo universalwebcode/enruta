@@ -94,7 +94,7 @@ export default function Navbar() {
               href="#contacto"
               className="hidden rounded-full bg-brand px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-dark lg:inline-flex"
             >
-              Cotizar campaña
+              Solicitar cotización
             </a>
             <button
               type="button"
@@ -127,7 +127,7 @@ export default function Navbar() {
                 onClick={close}
                 className="mt-4 inline-flex items-center justify-center rounded-full bg-brand px-5 py-3 text-sm font-bold text-white"
               >
-                Cotizar campaña
+                Solicitar cotización
               </a>
               <div className="mt-4 flex flex-col gap-2 pb-3 text-sm font-semibold text-slate-600">
                 {PHONES.map((phone) => (

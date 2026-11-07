@@ -10,8 +10,8 @@ export default function Routes() {
         <Reveal>
           <SectionHeading
             eyebrow="Cobertura"
-            title="Cuatro corredores donde la gente se mueve todos los días."
-            text="Rutas urbanas en Cali y corredores intermunicipales del Valle. La pauta viaja con el bus, no en un aviso que se pasa de largo."
+            title="Cuatro rutas donde su audiencia se mueve todos los días."
+            text="Rutas urbanas en Cali y rutas intermunicipales del Valle. La publicidad en buses viaja con el vehículo, no en un anuncio que se pasa de largo."
           />
         </Reveal>
 

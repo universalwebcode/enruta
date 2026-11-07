@@ -10,8 +10,8 @@ export default function Clients() {
         <Reveal>
           <SectionHeading
             eyebrow="Casos de éxito"
-            title="Marcas que ya ocuparon el respaldo."
-            text="El caso principal es B&M Construcciones. Más abajo, otras marcas que pautaron con EnRuta y piezas instaladas en los buses."
+            title="Empresas que ya invirtieron en el formato."
+            text="El caso principal es B&M Construcciones. Más abajo, otras marcas que contrataron publicidad en buses con EnRuta y piezas instaladas en ruta."
           />
         </Reveal>
 
@@ -43,9 +43,9 @@ export default function Clients() {
             </p>
             <h3 className="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">B&M Construcciones</h3>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              Una constructora del Valle explica, en sus palabras, por qué pautó en los buses y qué pasó
-              después: personas de otros municipios los conocieron por la pieza y los visitaron. Recomiendan
-              el formato.
+              Una constructora del Valle explica, en sus palabras, por qué eligió publicidad en buses y qué
+              pasó después: clientes de otros municipios los conocieron por la pieza y los visitaron.
+              Recomiendan el formato a otras empresas.
             </p>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-slate-500">
               En el video también presentan sus proyectos. Esos precios son de B&M, no de la pauta.
@@ -54,7 +54,7 @@ export default function Clients() {
         </div>
 
         <Reveal>
-          <h3 className="mt-16 text-xl font-extrabold tracking-tight text-navy">Marcas que pautaron con EnRuta</h3>
+          <h3 className="mt-16 text-xl font-extrabold tracking-tight text-navy">Empresas que han pautado con EnRuta</h3>
         </Reveal>
         <ul className="mt-6 flex flex-wrap justify-center gap-4">
           {clients.map((client, index) => (
@@ -78,10 +78,10 @@ export default function Clients() {
 
         <div className="mt-16">
           <Reveal>
-            <h3 className="text-xl font-extrabold tracking-tight text-navy">Así se ve la pauta instalada</h3>
+            <h3 className="text-xl font-extrabold tracking-tight text-navy">Así se ve la campaña instalada</h3>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
-              Fundas impresas sobre el respaldo. El pasajero las tiene al frente durante el recorrido, no en
-              un panel que se ve de refilón al subir.
+              Fundas impresas sobre el respaldo. El pasajero las tiene al frente durante el recorrido: tiempo
+              de lectura real, no un panel que se ve de refilón al subir.
             </p>
           </Reveal>
           <div className="mt-6 grid gap-4 md:grid-cols-3">

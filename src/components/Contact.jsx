@@ -58,9 +58,9 @@ export default function Contact({ planId, onPlanChange }) {
           <div className="contents lg:flex lg:flex-col lg:gap-8">
             <Reveal className="order-1">
               <SectionHeading
-                eyebrow="Contacto"
-                title="Pide la propuesta con Fanery Ospina."
-                text="Cuéntanos la marca, la ruta y el plan. Te respondemos con disponibilidad de buses y la forma de salir a circulación."
+                eyebrow="Contacto comercial"
+                title="Solicite una propuesta con Fanery Ospina."
+                text="Indique la empresa, la ruta y el plan de interés. Respondemos con disponibilidad de buses y el detalle para salir a circulación."
               />
             </Reveal>
 
