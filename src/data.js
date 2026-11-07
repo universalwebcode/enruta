@@ -7,6 +7,19 @@ export const EMAIL = "contacto@publicidadenruta.com";
 export const EMAIL_ALT = "publicidad.enrutaco@gmail.com";
 export const WHATSAPP = "573192134129";
 
+export const SOCIAL = [
+  {
+    id: "instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/publicidad_enruta/",
+  },
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/publicidad-enruta/",
+  },
+];
+
 export function whatsappUrl(text) {
   const message =
     text ||

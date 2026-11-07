@@ -1,6 +1,7 @@
 import { EMAIL, EMAIL_ALT, NAV, PHONES, routes } from "../data";
 import Container from "./Container";
 import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
 
 const YEAR = new Date().getFullYear();
 
@@ -15,6 +16,10 @@ export default function Footer() {
           <p className="mt-4 text-sm leading-relaxed text-white/75">
             Publicidad EnRuta. Marcas que viajan lejos, en el respaldo de los buses de Cali y el Valle.
           </p>
+          <SocialLinks
+            className="mt-5 flex items-center gap-3"
+            linkClassName="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-brand hover:text-white"
+          />
         </div>
 
         <div>
@@ -22,7 +27,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2">
             {NAV.map((item) => (
               <li key={item.id}>
-                <a href={item.href} className="text-sm font-semibold text-white/85 hover:text-white">
+                <a href={item.href} className="text-sm font-semibold text-white/85 transition-colors hover:text-white">
                   {item.label}
                 </a>
               </li>
@@ -48,18 +53,18 @@ export default function Footer() {
           <ul className="mt-3 space-y-1.5 text-sm font-semibold">
             {PHONES.map((phone) => (
               <li key={phone.tel}>
-                <a href={`tel:${phone.tel}`} className="hover:text-white/80">
+                <a href={`tel:${phone.tel}`} className="transition-colors hover:text-white/80">
                   {phone.display}
                 </a>
               </li>
             ))}
             <li>
-              <a href={`mailto:${EMAIL}`} className="break-all hover:text-white/80">
+              <a href={`mailto:${EMAIL}`} className="break-all transition-colors hover:text-white/80">
                 {EMAIL}
               </a>
             </li>
             <li>
-              <a href={`mailto:${EMAIL_ALT}`} className="break-all font-medium text-white/70 hover:text-white">
+              <a href={`mailto:${EMAIL_ALT}`} className="break-all font-medium text-white/70 transition-colors hover:text-white">
                 {EMAIL_ALT}
               </a>
             </li>

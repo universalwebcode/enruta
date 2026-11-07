@@ -54,3 +54,21 @@ export function IconArrow({ className = "h-4 w-4" }) {
     </svg>
   );
 }
+
+export function IconInstagram({ className = "h-5 w-5" }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="none" stroke="currentColor" strokeWidth="1.8">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function IconLinkedIn({ className = "h-5 w-5" }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M6.34 9.25H3.56V20.5h2.78V9.25zM4.95 3.5a1.61 1.61 0 1 0 0 3.22 1.61 1.61 0 0 0 0-3.22zM20.44 20.5h-2.78v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9v5.6H10.94V9.25h2.66v1.53h.04c.37-.7 1.27-1.44 2.62-1.44 2.8 0 3.32 1.84 3.32 4.24V20.5z" />
+    </svg>
+  );
+}

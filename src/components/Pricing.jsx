@@ -1,6 +1,7 @@
 import { included, plans, specRows } from "../data";
 import Container from "./Container";
 import { IconCheck } from "./Icons";
+import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
 function QuoteButton({ plan, onSelect, solid }) {
@@ -23,17 +24,21 @@ export default function Pricing({ onSelect }) {
   return (
     <section id="tarifas" className="scroll-mt-32 bg-white py-20 sm:py-24">
       <Container>
-        <SectionHeading
-          eyebrow="Tarifas"
-          title="Tres formas de subir la marca al bus."
-          text="Precios claros, en pesos colombianos. En los tres planes entran el diseño, la instalación, el mantenimiento y la renovación de cada mes."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="Tarifas"
+            title="Tres formas de subir la marca al bus."
+            text="Precios claros, en pesos colombianos. En los tres planes entran el diseño, la instalación, el mantenimiento y la renovación de cada mes."
+          />
+        </Reveal>
 
         <div className="mt-12 grid gap-5 lg:hidden">
-          {plans.map((plan) => (
-            <article
+          {plans.map((plan, index) => (
+            <Reveal
               key={plan.id}
-              className={`rounded-3xl p-6 ring-1 ${
+              as="article"
+              delay={index * 90}
+              className={`rounded-3xl p-6 ring-1 transition duration-300 hover:-translate-y-1 ${
                 plan.featured ? "order-first bg-navy text-white ring-navy" : "bg-white text-ink ring-slate-200"
               }`}
             >
@@ -62,11 +67,11 @@ export default function Pricing({ onSelect }) {
               <div className="mt-6">
                 <QuoteButton plan={plan} onSelect={onSelect} solid={plan.featured} />
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
 
-        <div className="mt-12 hidden overflow-hidden rounded-3xl ring-1 ring-slate-200 lg:block">
+        <Reveal className="mt-12 hidden overflow-hidden rounded-3xl ring-1 ring-slate-200 lg:block">
           <table className="w-full border-collapse text-left text-sm">
             <caption className="sr-only">Comparación de planes de publicidad en buses</caption>
             <thead>
@@ -134,9 +139,9 @@ export default function Pricing({ onSelect }) {
               </tr>
             </tbody>
           </table>
-        </div>
+        </Reveal>
 
-        <div className="mt-6 rounded-3xl bg-paper p-6 ring-1 ring-slate-200 sm:p-8">
+        <Reveal className="mt-6 rounded-3xl bg-paper p-6 ring-1 ring-slate-200 sm:p-8">
           <p className="text-base font-bold text-navy">Incluido en los tres planes, sin costo adicional</p>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {included.map((item) => (
@@ -154,7 +159,7 @@ export default function Pricing({ onSelect }) {
             cinco. La pauta compartida es el paquete de $800.000, con la mitad del espacio. Cada bus
             tiene 10 espacios; el plan individual reserva uno por vehículo.
           </p>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

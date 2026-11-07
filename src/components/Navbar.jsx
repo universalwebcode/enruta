@@ -3,6 +3,7 @@ import { NAV, PHONES, EMAIL } from "../data";
 import Container from "./Container";
 import { IconClose, IconMenu } from "./Icons";
 import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -48,16 +49,20 @@ export default function Navbar() {
       <div className="hidden bg-navy text-white sm:block">
         <Container className="flex h-9 items-center justify-between text-xs font-medium">
           <p>Cali · Valle del Cauca</p>
-          <p className="flex items-center gap-4">
+          <div className="flex items-center gap-4">
             {PHONES.map((phone) => (
-              <a key={phone.tel} href={`tel:${phone.tel}`} className="hover:text-white/80">
+              <a key={phone.tel} href={`tel:${phone.tel}`} className="transition-colors hover:text-white/80">
                 {phone.display}
               </a>
             ))}
-            <a href={`mailto:${EMAIL}`} className="hover:text-white/80">
+            <a href={`mailto:${EMAIL}`} className="transition-colors hover:text-white/80">
               {EMAIL}
             </a>
-          </p>
+            <SocialLinks
+              className="ml-1 flex items-center gap-2 border-l border-white/20 pl-4"
+              linkClassName="inline-flex items-center justify-center text-white/85 transition duration-300 hover:scale-110 hover:text-white"
+            />
+          </div>
         </Container>
       </div>
 
@@ -131,6 +136,10 @@ export default function Navbar() {
                   </a>
                 ))}
               </div>
+              <SocialLinks
+                className="mt-2 flex items-center gap-3 pb-4"
+                linkClassName="inline-flex h-10 w-10 items-center justify-center rounded-full bg-paper text-navy ring-1 ring-slate-200 transition duration-300 hover:-translate-y-0.5 hover:bg-navy hover:text-white hover:ring-navy"
+              />
             </Container>
           </div>
         ) : null}
