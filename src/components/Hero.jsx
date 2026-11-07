@@ -137,7 +137,7 @@ export default function Hero() {
             </div>
             <figcaption className="mt-4 flex items-end justify-between gap-4">
               <p className="max-w-[16rem] text-sm leading-snug text-slate-600">
-                Recorrido real por el salón. El aviso queda al frente, silla por silla.
+                Recorrido real, ruta Calima-Cali.
               </p>
               <p className="text-right">
                 <span className="block text-[11px] font-bold uppercase tracking-[0.14em] text-slate-500">Exposición diaria</span>
